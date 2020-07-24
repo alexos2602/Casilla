@@ -11,10 +11,25 @@
 
     <title>Casillas</title>
   </head>
-  <body>
+  <body class="hidden">
+
+    <div class="centrado" id="onload">
+        <p>Cargando...</p>
+        <div class="loadingio-spinner-bean-eater-ecfb7kn19"><div class="ldio-wxip03iyj68">
+            <div><div></div><div></div><div></div></div><div><div></div><div></div><div></div></div>
+            </div></div>
+    </div>
+
     <div class="container">
 
-        <h1 class="h2 text-center">Casillas</h1>
+        <h1 class="h2 text-center pt-2">Casillas</h1>
+        
+        <div class="alert alert-success mt-5">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Que bien descubriste la combinación secreta</p>
+            <hr>
+            <p class="mb-0">Moa Kikuchi Estara Feliz</p>
+          </div>
 
         <div class="row justify-content-center pt-1">
             <div class="row col-10 justify-content-center flex-nowrap titulo">
@@ -26,65 +41,64 @@
             </div>
             <div class="row col-10 justify-content-center flex-nowrap">
                 <p>1</p>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
+                <div class="col-2 bg-secondary"><span class="11"></span></div>
+                <div class="col-2 bg-secondary"><span class="12"></span></div>
+                <div class="col-2 bg-secondary"><span class="13"></span></div>
+                <div class="col-2 bg-secondary"><span class="14"></span></div>
+                <div class="col-2 bg-secondary"><span class="15"></span></div>
             </div>
             <div class="row col-10 justify-content-center flex-nowrap">
                 <p>2</p>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
+                <div class="col-2 bg-secondary"><span class="21"></span></div>
+                <div class="col-2 bg-secondary"><span class="22"></span></div>
+                <div class="col-2 bg-secondary"><span class="23"></span></div>
+                <div class="col-2 bg-secondary"><span class="24"></span></div>
+                <div class="col-2 bg-secondary"><span class="25"></span></div>
             </div>
             <div class="row col-10 justify-content-center flex-nowrap">
                 <p>3</p>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
+                <div class="col-2 bg-secondary"><span class="31"></span></div>
+                <div class="col-2 bg-secondary"><span class="32"></span></div>
+                <div class="col-2 bg-secondary"><span class="33"></span></div>
+                <div class="col-2 bg-secondary"><span class="34"></span></div>
+                <div class="col-2 bg-secondary"><span class="35"></span></div>
             </div>
             <div class="row col-10 justify-content-center flex-nowrap">
                 <p>4</p>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
+                <div class="col-2 bg-secondary"><span class="41"></span></div>
+                <div class="col-2 bg-secondary"><span class="42"></span></div>
+                <div class="col-2 bg-secondary"><span class="43"></span></div>
+                <div class="col-2 bg-secondary"><span class="44"></span></div>
+                <div class="col-2 bg-secondary"><span class="45"></span></div>
             </div>
             <div class="row col-10 justify-content-center flex-nowrap">
                 <p>5</p>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
-                <div class="col-2 bg-secondary"><span></span></div>
+                <div class="col-2 bg-secondary"><span class="51"></span></div>
+                <div class="col-2 bg-secondary"><span class="52"></span></div>
+                <div class="col-2 bg-secondary"><span class="53"></span></div>
+                <div class="col-2 bg-secondary"><span class="54"></span></div>
+                <div class="col-2 bg-secondary"><span class="55"></span></div>
             </div>
             
-
             <form>
                 <div class="row p-2">
                   <div class="col-sm m-2">
-                    <input type="text" class="form-control" placeholder="Cordenada X">
+                    <input type="text" class="form-control valorx" placeholder="Cordenada X">
                   </div>
                   <div class="col-sm m-2">
-                    <input type="text" class="form-control" placeholder="Cordenada Y">
+                    <input type="text" class="form-control valory" placeholder="Cordenada Y">
                   </div>
                 </div>
-                <button type="button" class="btn btn-outline-primary btn-md btn-block">Insertar</button>
-                <button type="button" class="btn btn-outline-dark btn-md btn-block">Borrar</button>
+                <button type="button" class="btn btn-outline-primary btn-md btn-block">Run</button>
               </form>
 
             </div>
         </div>
 
+    <script src="public/jquery.js"></script>
+    <script src="public/filtro.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
