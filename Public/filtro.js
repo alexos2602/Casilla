@@ -23,6 +23,18 @@ $('.btn').click(function () {
 
 });
 
+function valideKey(evt) {
+    var code = evt.which ? evt.which : evt.keyCode;
+    
+    if (code >= 48 && code <= 53) {
+        return true;
+    } else {
+        
+        return false;
+    }
+
+    } 
+
 /*----------------------Preloader----------------------*/
 window.onload = function() {
     $('#onload').fadeOut();

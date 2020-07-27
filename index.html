@@ -83,10 +83,10 @@
             <form>
                 <div class="row p-2">
                   <div class="col-sm m-2">
-                    <input type="text" class="form-control valorx" placeholder="Cordenada X">
+                    <input type="text" class="form-control valorx" placeholder="Cordenada X" maxlength="1" onkeypress="return valideKey(event)">
                   </div>
                   <div class="col-sm m-2">
-                    <input type="text" class="form-control valory" placeholder="Cordenada Y">
+                    <input type="text" class="form-control valory" placeholder="Cordenada Y" maxlength="1" onkeypress="return valideKey(event)">
                   </div>
                 </div>
                 <button type="button" class="btn btn-outline-primary btn-md btn-block">Run</button>
